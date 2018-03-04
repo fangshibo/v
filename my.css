@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-03-02 11:31:13
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-04 13:14:37
+* @Last Modified time: 2018-03-04 15:52:34
 */
 .aa
 {
@@ -10,7 +10,7 @@
     height: 100px;
     background: red;
     float: left;
-    border:2px solid green;
+    border:1px solid green;
 
 }
 
