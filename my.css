@@ -2,16 +2,16 @@
 * @Author: Marte
 * @Date:   2018-03-02 11:31:13
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-04 15:52:34
+* @Last Modified time: 2018-03-04 18:36:01
 */
 .aa
 {
-    width:100px;
-    height: 100px;
-    background: red;
+    width:120px;
+    height: 120px;
+    background: #3cb371;
     float: left;
     border:1px solid green;
-
+   border-radius:10px;
 }
 
 #bb
@@ -22,5 +22,6 @@
 }
 #ddd
 {
-    background:blue;
+    width:82%;
+    //background:green;
 }
