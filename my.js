@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-25 12:09:59
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-04 18:36:24
+* @Last Modified time: 2018-03-04 19:09:11
 */
 
 'use strict';
@@ -21,3 +21,14 @@ for (var i = 1; i <=63; i++) {
 
 });
 
+$(document).ready(function($) {
+
+$(".aa").click(function(){
+    $(this).css("background","green");
+    // $(this).animate({
+    //   left:'0px',
+    //   height:'-=150px',
+    //   width:'-=150px'
+    // });
+  });
+});
