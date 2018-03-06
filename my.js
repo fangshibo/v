@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-25 12:09:59
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-06 11:37:51
+* @Last Modified time: 2018-03-06 12:04:43
 */
 
 'use strict';
@@ -32,9 +32,11 @@ function create(a,b,c,d,e,f)
             var c=c;
             var d=d;
             var e=e;
-            var div = $("<div class =aa id='" + id + "'><div class=row><div class= col-md-6 >" + id +"</div> <div class= col-md-6>" + b +"</div><div class= col-md-1 ></div><div class=col-md-10 ><p>" + c +"中华fgjhghjgjghjgdsa共和国</p></div><div class= col-md-6 >" + d +"</div><div class= col-md-6 >" + e +"</div></div></div>");
+            var div = $("<button class =aa id='" + id + "'><div class=row><div class= col-md-6 >" + id +"</div> <div class= col-md-6>" + b +"</div><div class= col-md-1 ></div><div class=col-md-10 ><p class=p1>" + c +"中华fgjhghjgjghjgdsa共和国</p></div><div class= col-md-6 >" + d +"</div><div class= col-md-6 >" + e +"</div></div></button>");
             $("#ddd").append(div);// body 拼接一个 div
             $(".col-md-10").height(70);
+            $(".aa").addClass('btn btn-success');
+
 
         }
 }
@@ -64,7 +66,7 @@ $(".aa").click(function(){
 
 
 
-    $("div").remove(".aa");
+    $("button").remove(".aa");
 
 
     create("w","","dd","kk","",30);
