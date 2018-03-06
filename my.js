@@ -2,10 +2,25 @@
 * @Author: Marte
 * @Date:   2018-02-25 12:09:59
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-04 19:49:51
+* @Last Modified time: 2018-03-06 10:21:25
 */
 
 'use strict';
+
+$(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 100
+      },
+      hide: {
+        effect: "shake",
+        duration: 1000
+      }
+    });
+
+});
 //var boarddiv = "<div style='background:red;width:100px;height:100px;z-index:999;position:absolute;top:0;'>555</div>";
 function create(a,b,c,d,e,f)
 {
@@ -28,14 +43,17 @@ function create(a,b,c,d,e,f)
 
 
 
-
-
 $(document).ready(function($) {
 create("e","dd","qq","ss","dv",20);
 $(".aa").click(function(){
     $(this).css("background","green");
 
+      $( "#dialog" ).dialog( "open" );
+
+
+
     $("div").remove(".aa");
+
 
     create("w","","dd","kk","",30);
   });
