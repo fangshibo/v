@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-25 12:09:59
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-06 10:21:25
+* @Last Modified time: 2018-03-06 11:37:51
 */
 
 'use strict';
@@ -10,12 +10,13 @@
 $(function() {
     $( "#dialog" ).dialog({
       autoOpen: false,
+       modal: true,
       show: {
         effect: "blind",
         duration: 100
       },
       hide: {
-        effect: "shake",
+        effect: "scale",
         duration: 1000
       }
     });
@@ -48,7 +49,18 @@ create("e","dd","qq","ss","dv",20);
 $(".aa").click(function(){
     $(this).css("background","green");
 
-      $( "#dialog" ).dialog( "open" );
+      $( "#dialog" ).dialog(
+            {autoOpen: true},
+             {modal:true},
+
+            {show:{effect:'drop', direction:'up'}},
+            {hide:{effect:'bounce', direction:'down'}},
+
+            {draggable:false},
+            {resizable:false}
+            );
+
+      // $( "#dialog" ).dialog.show("effect": "scale","duration","1000");
 
 
 
