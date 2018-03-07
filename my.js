@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-02-25 12:09:59
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-03-06 12:04:43
+* @Last Modified time: 2018-03-06 12:56:44
 */
 
 'use strict';
@@ -47,7 +47,8 @@ function create(a,b,c,d,e,f)
 
 
 $(document).ready(function($) {
-create("e","dd","qq","ss","dv",20);
+    $(".row").before("<div class=col-md-12 id='heading'><h5>标题 5 新</h5></div>");
+create("e","dd","qq","ss","dv",100);
 $(".aa").click(function(){
     $(this).css("background","green");
 
